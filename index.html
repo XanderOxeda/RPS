@@ -8,26 +8,80 @@
   <title>Piedra papel o tijera</title>
 </head>
 <body>
+  <header>
+    <h1>Rock, paper and scissors</h1>
+  </header>
 
-  <h1 class="juego">Piedra, papel o tijera</h1>
-  <p>Elige tu opción y comienza a jugar</p>
+  <main>
+    <section class="board">
+      <article class="choice">
+        <button onclick="play('piedra')">
+          <img src="img/hand-rock-solid.svg" alt="">
+          <span>Piedra</span>
+        </button>
+      </article>
+      <article class="choice">
+        <button onclick="play('piedra')">
+          <img src="img/hand-paper-solid.svg" alt="">
+          <span>Papel</span>
+        </button>
+      </article>
+      <article class="choice">
+        <button onclick="play('piedra')">
+          <img src="img/hand-scissor-solid.svg" alt="">
+          <span>Tijera</span>
+        </button>
+      </article>
 
-  <button onclick="play('piedra')"><span>🪨</span></button>
-  <button onclick="play('papel')"><span>📄</span></button>
-  <button onclick="play('tijera')"><span>✂️</span></button>
+      <article class="result">
+        <table class="result-tab">
+          <tr class="score--table">
+            <td class="score" id="player">#</td>
+            <td class="score" id="bot">#</td>
+          </tr>
+          <tr class="tittle">
+            <td class="player">Player</td>
+            <td class="Computer">Computer</td>
+          </tr>
+        </table>
+      </article>
 
-  <br>
-  
-  <table>
-    <tr>
-      <td><p id="resultado">Resultado: </p></td>
-    </tr>
-    <tr>
-      <td><p id="res-jugador">player</p></td>
-      <td><p id="res-pc">pc</p></td>
-      <td><p id="res-juego">juego</p></td>
-    </tr>
-  </table>
+    </section>
+  </main>
+
+  <footer>
+    
+    <section class="technologies">
+      <a href="">
+        <img src="img/html.svg" class="footer--icons" alt="">
+      </a>
+      <a href="">
+        <img src="img/css.svg" class="footer--icons" alt="">
+      </a>
+      <a href="">
+        <img src="img/js.svg" class="footer--icons" alt="">
+      </a>
+    </section>
+
+    <section class="developer">
+      <a href="">
+        <p>Xander Oxeda</p>
+      </a>
+    </section>
+
+    <section class="portfolio">
+      <a href="">
+        <img src="img/github.svg" class="footer--icons" alt="">
+      </a>
+      <a href="">
+        <img src="img/dribbble.svg" class="footer--icons" alt="">
+      </a>
+      <a href="">
+        <img src="img/pinterest.svg" class="footer--icons" alt="">
+      </a>
+    </section>
+
+  </footer>
 
   <script src="script.js"></script>
 </body>
