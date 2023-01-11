@@ -3,3 +3,81 @@
     padding: 0;
     margin: 0;
 }
+body {
+    background: #2a8eff;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  h1,p {
+    color: rgb(255, 255, 255);
+  }
+  
+  p {
+    font-size: .8rem;
+  }
+  
+  button {
+    width: 180px;
+    height: 180px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  button span {
+    font-size: 3rem;
+    text-shadow: 3px 3px;
+  }
+  
+  button:hover {
+    background-color: rgb(255, 251, 0);
+    box-shadow: 3px 3px;
+  }
+  
+  p#resultado {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  table{
+    width: 100vw;
+  }
+  
+  /* Agregamos una media query para aplicar estilos a pantallas más pequeñas */
+  @media (min-width: 600px) {
+    button {
+      padding: 8px 16px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: .8rem;
+      color: rgb(35, 35, 35);
+    }
+    p#resultado {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Agregamos una media query para aplicar estilos a pantallas más grandes */
+  @media (min-width: 1020px) {
+    h1 {
+      font-size: 4rem;
+    }
+    
+    p {
+      font-size: 1rem;
+      color: rgb(43, 43, 43);
+    }
+    button {
+      padding: 6px 12px;
+    }
+    
+  }
+  
+  
