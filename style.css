@@ -1,15 +1,16 @@
+/*    General    */
+
 *{
   font-family: monospace;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 a{
   text-decoration: none;
 }
 
-/*    General    */
+/*    Body    */
 body{
   background-color: #34495E;
 }
@@ -25,8 +26,6 @@ header{
 h1{
   color: #ECF0F1;
 }
-
-
 main{
   display: flex;
   flex-direction: column;
@@ -78,35 +77,17 @@ td{
 .score{
   font-size: 4rem;
 }
-
 footer{
   height: 5vh;
-  background-color: #000;
+  background-color: #2C3E50;
   display: flex;
   justify-content: space-between;
   padding: .5rem .25rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.logo{
-  margin-right: 1rem;
-}
-
-
-
 footer section{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .footer--icons{
   margin: 0 10px;
