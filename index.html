@@ -15,19 +15,19 @@
   <main>
     <section class="board">
       <article class="choice">
-        <button onclick="play('piedra')">
+        <button onclick="play('rock')">
           <img src="img/hand-rock-solid.svg" alt="">
           <span>Piedra</span>
         </button>
       </article>
       <article class="choice">
-        <button onclick="play('piedra')">
+        <button onclick="play('paper')">
           <img src="img/hand-paper-solid.svg" alt="">
           <span>Papel</span>
         </button>
       </article>
       <article class="choice">
-        <button onclick="play('piedra')">
+        <button onclick="play('scissor')">
           <img src="img/hand-scissor-solid.svg" alt="">
           <span>Tijera</span>
         </button>
@@ -36,12 +36,14 @@
       <article class="result" onclick="resetScores()">
         <table class="result-tab">
           <tr class="score--table">
-            <td class="score" id="player">#</td>
-            <td class="score" id="bot">#</td>
+            <td class="score" id="player">0</td>
+            <td class="score" id="bot">0</td>
+            <td class="score" id="draw">0</td>
           </tr>
           <tr class="tittle">
             <td class="player">Player</td>
             <td class="Computer">Computer</td>
+            <td class="Computer">Draw</td>
           </tr>
         </table>
       </article>
