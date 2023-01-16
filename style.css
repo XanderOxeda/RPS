@@ -85,15 +85,31 @@ footer{
   padding: .5rem .25rem;
 }
 footer section{
+  padding: 1vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .footer--icons{
+  max-height: 3vh;
   margin: 0 10px;
   width: 1.5rem;
   height: 1.5rem;
 }
 .developer a{
   color: #ECF0F1;
+}
+
+@media(min-width: 640px) {
+  .board{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .result{
+    height: 30vh;
+  }
+  .choice{
+    height: 50vh;
+    width: 33%;
+  }
 }
